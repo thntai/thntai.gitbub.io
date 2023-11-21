@@ -1,0 +1,114 @@
+/** {
+	padding: 0;
+	margin: 0;
+}*/
+#menu_text{
+	margin: 0px;
+}
+#menu_text {
+	background-color: #42c5cf;
+	text-align: center;
+	padding: 80px;
+}
+nav {
+	background-color: #484d4d;
+	/*padding: 14px 20px;
+	margin: 0px*/
+	overflow: hidden; /*tất cả phần thừa ra trong nav sẽ không hiện*/
+}
+nav a {
+	color: white;
+	padding: 14px 20px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover {  /*trỏ chuột vào nút ấn đổi màu*/
+	background-color: #DDD;
+	color: black;
+}
+nav a.menu_left {  /*tất cả phần a menu_left trôi sang bên trái*/
+	float: left;
+}
+nav a.menu_right {  /*tất cả phần a menu_left trôi sang bên phải*/
+	float: right;
+}
+#left_side {      /*thẻ div dùng #, căn chỉnh bên trái web 30%, bên phải 70%*/
+	flex: 30%;
+	background-color: #f1f1f1;
+	padding: 10px 20px;    /*chỉnh phần chữ cách viền trên dưới 10, trái phải 20*/
+}
+#right_side {
+	flex: 70%;
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+}
+#flex_container {
+	display: flex;
+	flex-wrap: nowrap;  /*nếu thừa hàng ngang sẽ ko bị đẩy xuống dòng dưới*/
+}
+table {
+	border-style: solid;
+}
+
+/* Styling the table */
+table {
+	border-collapse: collapse;
+	width: 100%
+}
+
+table td, table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.course_item {
+	width: 33%
+	float: left;
+	text-align: center;
+}
+.course_img {
+	width: 90%;
+}
+#course_container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.course_item {
+	flex: 33%;
+}
+.course_title {
+	font-size: 150%
+	font-weight: bold;
+	padding: 10px 10px 5px 10px;
+}
+.course_desc {
+	margin: 0px 10px 20px 10px;
+}
+@media(max-width: 800px) {
+  * {
+  	background-color: red;   /*nếu chiều ngang màn hình dưới 800px thì chuyển sang màu đỏ*/
+  }
+@media(max-width: 400px) {
+	#left_side {
+		flex:100%;
+	}
+	#right_side {
+		flex:100%;
+	}
+	#flex_container {
+		flex-wrap: wrap;
+	}
+	.course_item
+}
